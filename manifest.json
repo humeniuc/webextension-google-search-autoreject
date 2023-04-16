@@ -1,0 +1,19 @@
+{
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "google_search_autoreject@humeniuc.ro"
+        }
+    },
+    "description": "Google search autoreject",
+    "manifest_version": 2,
+    "name": "Google search autoreject",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.google.com/search*"
+            ],
+            "js": ["entry.js"]
+        }
+    ]
+}
